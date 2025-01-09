@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    height: 80%;
+    width: 100%;
+    background-image: url('images/bg-scene3.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container #character {
+    height: 45vh;
+    position: absolute;
+    left: 0%;
+    top: 40%;
+}
+
+.container #cat {
+    height: 45vh;
+    position: absolute;
+    left: 70%;
+    top: 35%;
+}
+
+.prompt {
+    height: 3%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    color:bisque;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dialogue-box {
+    width: 100%;
+    height: 20%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dialogue-box p {
+    color: brown;
+    font-size: 20px;
+}
+
+#loading {
+    position: fixed;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.showCat {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cat-container {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.cat-container img{
+    height: 90%;
+}
+
+.cat-container p{
+    font-size: 10px;
+}
+
+.showCat button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    width: 90%;
+    border: none;
+    font-family: 'Arial', sans-serif;
+    background-color: blanchedalmond;
+}
+
+.showCat button:hover {
+    background-color: bisque;
+}
+
+.showCat p{
+    margin: 10px;
+    font-size: 20px;
+}
+
+#prompt-pic{
+    position: absolute;
+    bottom: 10%;
+    left: -1%;
+    display: none;
+}

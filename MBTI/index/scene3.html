@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scene3</title>
+  <link rel="stylesheet" href="scene3.css">
+</head>
+<body>
+  <div class="container">
+    <img id="character" src="images/character-scene3.png">
+    <img id="cat" src="images/cat.png">
+    <div class="showCat">
+      <div class="cat-container">
+        <img src="images/cat.png">
+        <p>: "I am a stray cat with magical powers.However, my magic is running out... I can sense that you have a mysterious treasure chest with you. Would you be willing to use it to save me?</p>
+      </div>
+      <button id="ans1">Alright... even though I've lost the treasure chest, I've saved a little cat.</button>
+      <button id="ans2">No... though it is pitiful, my treasure chest might have a greater purpose.</button>
+    </div>
+    <div class="prompt">
+      <p>Use the A/D keys to move the character left or right.</p>
+    </div>
+    
+  </div>
+  <img id="prompt-pic" src="images/cat.png">
+  <div class="dialogue-box">
+    <p id="dialogue">You continue walking through the forest, wondering, what's in the treasury box? As you walk further, you spot a scruffy little stray cat. It looks dirty and ragged, with a forlorn expression in its eyes.</p>
+  </div>
+  <div id="loading">
+    <video id="loading-video" src="loading.mp4" autoplay muted></video>
+  </div>
+  <script src="scene3.js"></script>
+</body>

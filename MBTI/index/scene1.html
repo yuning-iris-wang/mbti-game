@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene One</title>
+    <link rel="stylesheet" href="scene1.css">
+</head>
+<body>
+    <div class="container">
+        <img id="character" src="images/scene1-character.png" alt="Little Girl">
+        <div class="showLeft">
+            <p>To your left, the forest deepens, and the sound shifts to a tranquil melody: the gentle lapping of a hidden lake and the occasional whisper of a breeze over its surface. A serene calm pulls at your senses, offering a quiet solace.</p>
+            <button id="forest-button">go to the forest</button>
+            <button id="back-left">make decision later and look around</button>
+        </div>
+        <div class="showRight">
+            <p>To your right, you hear the lively hum of voices, laughter, and the faint clatter of pots and pans—a village, vibrant and full of life, calling you toward its warmth.</p>
+            <button id="village-button">go to the village</button>
+            <button id="back-right">make decision later and look around</button>
+        </div>
+        <div class="showFox">
+            <div class="fox-container">
+                <img src="images/fox.png">
+                <p>: "We are about to share some stories by the fire.<br/> Do you have a favorite tale you’d like to share?"</p>
+            </div>
+            <button id="ans1">I will tell them something funny and exciting!</button>
+            <button id="ans2">Maybe I will share a personal story with a few of the foxes nearby.</button>
+            <button id="ans3">I will just listen. I enjoy hearing others stories more.</button>
+            <button id="ans4">Uhmmmm..Thanks but i prefer go to the lake.</button>
+        </div>
+        <div class="showLake">
+            <p>The lake is so peaceful, isn't it? How do you feel being here?</p>
+            <button id="ans5">I feel completely at peace here, just me and the lake.</button>
+            <button id="ans6">I enjoy the quiet. It's a nice change from everything else.</button>
+            <button id="ans7">It's beautiful, but I'd enjoy it more if I had someone to talk to.</button>
+            <button id="ans8">I feel so lonely. Maybe I should head to the village to find some company.</button>
+        </div>
+        <div class="prompt">
+            <p>Use the A/D keys to move the character left or right.</p>
+        </div>
+    </div>
+    <div class="dialogue-box">
+        <p id="dialogue">You slowly open your eyes, the soft morning light filtering through the canopy above, wrapping you in a gentle golden glow. The air carries the earthy scent of the forest, mingled with the faint sweetness of dew-kissed leaves. For a moment, all is still—just the rhythmic rustle of trees and the distant song of unseen birds.</p>
+    </div>
+    <div id="loading">
+        <video id="loading-video" src="loading.mp4" autoplay muted></video>
+    </div>
+    <script src="scene1.js"></script>
+</body>
+</html>
